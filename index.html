@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-scroll">
         <div class="container">
             <a class="navbar-brand" href="#">Albert Kurto</a>
 
@@ -28,38 +29,42 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <!-- Links -->
                 <div class="navbar-nav me-auto">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">About Me</a>
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
 
                 <!-- Social -->
-                <div class="navbar-nav flex-row gap-1">
-                    <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
-                    <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
-                    <a class="nav-link me-4 me-lg-5" href="#"><i class="bi bi-telegram"></i></a>
-                    <a class="nav-link" href="#"><i class="bi bi-circle-half" id="themeToggle"
-                            onclick="toggleTheme()"></i></a>
+                <div class="navbar-nav flex-row gap-2">
+                    <a href="https://github.com/Albro21" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/albert-kurto-3370a134a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_albro21_" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a class="me-4 me-lg-5" href="https://t.me/albro21" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="#"><i class="bi bi-circle-half" id="themeToggle" onclick="toggleTheme()"></i></a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="main d-flex flex-column">
-        <section id="about" class="py-5">
+    <!-- Main Content -->
+    <div class="main d-flex flex-column gap-4 gap-lg-5">
+
+        <!-- About Me -->
+        <section id="about" class="pt-5">
             <div class="container">
                 <div class="row align-items-center">
 
                     <!-- Profile Image -->
                     <div class="col-md-4 text-center mb-4 mb-md-0">
-                        <img src="images/pfp.png" alt="Albert Kurto" class="img-fluid">
+                        <img src="images/pfp.jpg" alt="Albert Kurto" class="img-fluid rounded-circle">
                     </div>
 
                     <!-- About Me Text -->
                     <div class="col-md-8">
                         <h2 class="mb-3">About Me</h2>
                         <p class="lead">
-                            I'm <strong>Albert Kurto</strong>, a passionate backend developer focused on building
+                            I'm <strong style="color: var(--primary-color);">Albert Kurto</strong>, a passionate backend developer focused on building
                             scalable and maintainable systems.
                             I enjoy solving complex problems and learning new technologies along the way.
                         </p>
@@ -69,73 +74,74 @@
                             and writing logic that brings web applications to life. My goal is to become a senior
                             backend developer, contribute to impactful projects, and continuously grow as a developer.
                         </p>
-                        <a href="#projects" class="btn btn-primary mt-3">See My Projects</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="py-5">
+        <!-- Skills & Technologies -->
+        <section id="skills">
             <div class="container">
-                <h2 class="mb-4 text-center">Skills & Technologies</h2>
+                <h2 class="mb-4 text-center">SKILLS & TECHNOLOGIES</h2>
 
                 <!-- Languages -->
-                <h5 class="mt-4">Languages</h5>
+                <h5 class="mt-4 fw-bold">Languages</h5>
                 <div class="row text-center">
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-filetype-py fs-1 mb-2"></i>
+                        <i class="bi bi-filetype-py fs-1 mb-2 primary-color"></i>
                         <h6>Python</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-code-slash fs-1 mb-2"></i>
+                        <i class="bi bi-code-slash fs-1 mb-2 primary-color"></i>
                         <h6>HTML / CSS</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-filetype-js fs-1 mb-2"></i>
+                        <i class="bi bi-filetype-js fs-1 mb-2 primary-color"></i>
                         <h6>JavaScript</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-filetype-java fs-1 mb-2"></i>
+                        <i class="bi bi-filetype-java fs-1 mb-2 primary-color"></i>
                         <h6>Java</h6>
                     </div>
                 </div>
 
                 <!-- Frameworks, Tools & Libraries -->
-                <h5 class="mt-4">Frameworks, Tools & Libraries</h5>
+                <h5 class="mt-4 fw-bold">Frameworks, Tools & Libraries</h5>
                 <div class="row text-center">
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-database fs-1 mb-2"></i>
+                        <i class="bi bi-database fs-1 mb-2 primary-color"></i>
                         <h6>Django</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-cpu fs-1 mb-2"></i>
+                        <i class="bi bi-cpu fs-1 mb-2 primary-color"></i>
                         <h6>Docker</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-git fs-1 mb-2"></i>
+                        <i class="bi bi-git fs-1 mb-2 primary-color"></i>
                         <h6>Git & GitHub</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-browser-chrome fs-1 mb-2"></i>
+                        <i class="bi bi-browser-chrome fs-1 mb-2 primary-color"></i>
                         <h6>Selenium</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-search fs-1 mb-2"></i>
+                        <i class="bi bi-search fs-1 mb-2 primary-color"></i>
                         <h6>Scrapy</h6>
                     </div>
                     <div class="col-6 col-md-2 mb-4">
-                        <i class="bi bi-arrow-left-right fs-1 mb-2"></i>
+                        <i class="bi bi-arrow-left-right fs-1 mb-2 primary-color"></i>
                         <h6>Requests</h6>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <h2 class="mb-5 text-center">Projects</h2>
+        <!-- Projects -->
+        <section id="projects" class="container d-flex flex-column gap-4 gap-lg-5">
+            <h2 class="text-center">PROJECTS</h2>
 
             <!-- Project: Company Management System -->
-            <section class="mb-5 row">
+            <section class="row">
                 <div class="col-12 col-lg-6">
                     <h4 class="fw-bold">Company Management System</h4>
                     <p>
@@ -150,13 +156,13 @@
                     </p>
                     <p><strong>Technologies:</strong> Django, PostgreSQL, Bootstrap, JavaScript, HTML/CSS</p>
                     <p>
-                        <a href="https://github.com/yourusername/company-management"
-                            class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
+                        <a href="https://github.com/Albro21/todolist"
+                            class="btn git-btn btn-sm" target="_blank">GitHub</a>
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 text-center">
                     <div class="position-relative">
-                        <img id="gallery1" src="images/timetracker/screenshot1.png" class="img-fluid shadow"
+                        <img id="gallery1" src="images/timetracker/screenshot1.png" class="img-fluid gallery-img"
                             alt="Company Management System">
                         <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(1)">
                             <i class="bi bi-chevron-left"></i>
@@ -169,7 +175,7 @@
             </section>
 
             <!-- Project: Speed Typing Website -->
-            <section class="mb-5 row">
+            <section class="row">
                 <div class="col-12 col-lg-6">
                     <h4 class="fw-bold">Speed Typing Website</h4>
                     <p>
@@ -182,13 +188,13 @@
                     </p>
                     <p><strong>Technologies:</strong> Django REST Framework, Chart.js, JavaScript, HTML/CSS</p>
                     <p>
-                        <a href="https://github.com/yourusername/speed-typing" class="btn btn-outline-primary btn-sm"
+                        <a href="https://github.com/Albro21/speed_typing_website" class="btn git-btn btn-sm"
                             target="_blank">GitHub</a>
                     </p>
                 </div>
                 <div class="col-12 col-lg-6 text-center">
                     <div class="position-relative">
-                        <img id="gallery2" src="images/typing/screenshot1.png" class="img-fluid shadow"
+                        <img id="gallery2" src="images/typing/screenshot1.png" class="img-fluid gallery-img"
                             alt="Speed Typing Website">
                         <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(2)">
                             <i class="bi bi-chevron-left"></i>
@@ -200,40 +206,8 @@
                 </div>
             </section>
 
-            <!-- Project: Ad Placement Website -->
-            <section class="mb-5 row">
-                <div class="col-12 col-lg-6">
-                    <h4 class="fw-bold">Ad Placement Website</h4>
-                    <p>
-                        A clean and functional ad listing platform with user authentication, CRUD operations, and
-                        moderation.
-                        Users can post, edit, and delete ads while browsing through categories and filters.
-                    </p>
-                    <p>
-                        Includes an intuitive interface, image uploads, and a personal dashboard for managing listings.
-                    </p>
-                    <p><strong>Technologies:</strong> Django, Bootstrap, SQLite, Pillow</p>
-                    <p>
-                        <a href="https://github.com/yourusername/ad-placement" class="btn btn-outline-primary btn-sm"
-                            target="_blank">GitHub</a>
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 text-center">
-                    <div class="position-relative">
-                        <img id="gallery3" src="images/ads/screenshot1.png" class="img-fluid shadow"
-                            alt="Ad Placement Website">
-                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(3)">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(3)">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
             <!-- Project: Web Parsers -->
-            <section class="mb-5 row">
+            <section class="row">
                 <div class="col-12 col-lg-6">
                     <h4 class="fw-bold">Web Parsing / Scraping Scripts</h4>
                     <p>
@@ -245,14 +219,10 @@
                         JSON/CSV outputs. Useful for collecting structured data from complex pages.
                     </p>
                     <p><strong>Technologies:</strong> Python, Selenium, Requests, BeautifulSoup, CSV/JSON</p>
-                    <p>
-                        <a href="https://github.com/yourusername/web-parsers" class="btn btn-outline-primary btn-sm"
-                            target="_blank">GitHub</a>
-                    </p>
                 </div>
                 <div class="col-12 col-lg-6 text-center">
                     <div class="position-relative">
-                        <img id="gallery4" src="images/parsers/screenshot1.png" class="img-fluid shadow"
+                        <img id="gallery3" src="images/parsers/screenshot1.png" class="img-fluid gallery-img"
                             alt="Web Parsers">
                         <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(4)">
                             <i class="bi bi-chevron-left"></i>
@@ -264,6 +234,93 @@
                 </div>
             </section>
         </section>
+
+        <!-- Education -->
+        <section id="education" class="container">
+            <h2 class="mb-4 mb-lg-5 text-center">EDUCATION</h2>
+
+            <!-- Main Education -->
+            <div class="card p-3 mb-4">
+                <div class="d-flex gap-4">
+                    <div class="d-flex flex-column">
+                        <h4 class="fw-bold">Riga Technical College</h4>
+                        <p class="mb-1">Program: Computing & ICT</p>
+                        <p class="mb-1">Duration: 4 Years</p>
+                        <p class="mb-3">Location: Riga, Latvia</p>
+                    </div>
+                    <img src="images/rtk.png" alt="RTK Logo" height="120">
+                </div>
+                <p>
+                    Currently enrolled in a 4-year Computing & ICT program where I’ve gained foundational and advanced
+                    knowledge in software development, networking, and database management. The curriculum includes
+                    hands-on experience with a wide range of technologies and subjects:
+                </p>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, Java, HTML, CSS JavaScript, C++, and basics of C
+                        and
+                        Assembler</li>
+                    <li><strong>Low-Level Computing:</strong> Machine code fundamentals and binary arithmetic</li>
+                    <li><strong>Databases:</strong> MySQL, relational database design, SQL querying</li>
+                    <li><strong>Operating Systems:</strong> Unix/Linux basics, command-line tools, scripting</li>
+                    <li><strong>Networking:</strong> Cisco networking, configuring routers and switches, understanding
+                        protocols and subnets</li>
+                </ul>
+            </div>
+
+            <!-- Online Courses -->
+            <div class="card p-3">
+                <h5 class="fw-semibold">Online Courses & Self-Learning</h5>
+                <p>
+                    In addition to formal education, I have completed multiple online courses and self-learning tracks
+                    to expand my skills beyond the classroom:
+                </p>
+                <ul>
+                    <li>JavaScript Fundamentals and DOM Manipulation</li>
+                    <li>Python Programming with a focus on OOP</li>
+                    <li>Working with MySQL and writing complex SQL queries</li>
+                    <li>Developing full-stack applications using Django</li>
+                </ul>
+                <p>
+                    These courses helped me work more efficiently on my projects and deepened my understanding of
+                    backend development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="container mb-5">
+            <h2 class="mb-4 mb-lg-5 text-center">CONTACT</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong>Email:</strong>
+                            <a href="mailto:albert.kurto@gmail.com">albert.kurto@gmail.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <strong>Phone:</strong>
+                            <a href="tel:+37128242526">+371 28242526</a>
+                        </li>
+                        <li class="mb-3">
+                            <strong>Location:</strong>
+                            Riga, Latvia
+                        </li>
+                    </ul>
+                    <!-- Social Icons -->
+                    <div class="d-flex gap-3 fs-4">
+                        <a class="nav-link" href="https://github.com/Albro21" target="_blank"><i class="bi bi-github"></i></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/albert-kurto-3370a134a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a class="nav-link" href="https://www.instagram.com/_albro21_" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a class="nav-link" href="https://t.me/albro21" target="_blank"><i class="bi bi-telegram"></i></a>
+                    </div>
+                </div>
+                <form method="POST" class="col-12 col-lg-9 d-flex flex-column">
+                    <textarea name="message" class="form-control mb-3 h-100" placeholder="Type your message here..."></textarea>
+                    <button type="submit" class="btn send-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
     </div>
 
 
@@ -274,7 +331,6 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-    <script src="js/themeChange.js"></script>
 </body>
 
 </html>

@@ -28,22 +28,20 @@ const galleries = {
     ],
     2: [
         "images/typing/screenshot1.png",
-        "images/typing/screenshot2.png"
+        "images/typing/screenshot2.png",
+        "images/typing/screenshot3.png",
+        "images/typing/screenshot4.png",
+        "images/typing/screenshot5.png"
     ],
     3: [
-        "images/ads/screenshot1.png",
-        "images/ads/screenshot2.png"
-    ],
-    4: [
-        "images/parsers/screenshot1.png",
+        "images/parsers/screenshot1.png"
     ]
 };
 
 const indices = {
     1: 0,
     2: 0,
-    3: 0,
-    4: 0
+    3: 0
 };
 
 function showImage(id) {

@@ -5,7 +5,7 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #ffffff;
+    --bg-color: #eeeeee;
     --text-color: #222222;
     --primary-color: #ef9306;
 }
@@ -17,6 +17,34 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px 1px var(--primary-color);
+}
+
+.gallery-img {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 10px 2px var(--primary-color);
+}
+
+.bi-chevron-left, .bi-chevron-right {
+    color: var(--primary-color);
 }
 
 .navbar-toggler {
@@ -53,4 +81,23 @@ body {
 
 .main {
     padding-top: 56px;
+}
+
+.send-btn {
+    background-color: var(--primary-color);
+}
+
+.send-btn:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 5px 0 var(--primary-color);
+}
+
+.git-btn {
+    outline: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.git-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
