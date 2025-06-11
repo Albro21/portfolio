@@ -19,22 +19,22 @@ if (savedTheme === 'light') {
 
 const galleries = {
     1: [
-        "images/timetracker/screenshot1.png",
-        "images/timetracker/screenshot2.png",
-        "images/timetracker/screenshot3.png",
-        "images/timetracker/screenshot4.png",
-        "images/timetracker/screenshot5.png",
-        "images/timetracker/screenshot6.png"
+        "images/timetracker/screenshot1.avif",
+        "images/timetracker/screenshot2.avif",
+        "images/timetracker/screenshot3.avif",
+        "images/timetracker/screenshot4.avif",
+        "images/timetracker/screenshot5.avif",
+        "images/timetracker/screenshot6.avif"
     ],
     2: [
-        "images/typing/screenshot1.png",
-        "images/typing/screenshot2.png",
-        "images/typing/screenshot3.png",
-        "images/typing/screenshot4.png",
-        "images/typing/screenshot5.png"
+        "images/typing/screenshot1.avif",
+        "images/typing/screenshot2.avif",
+        "images/typing/screenshot3.avif",
+        "images/typing/screenshot4.avif",
+        "images/typing/screenshot5.avif"
     ],
     3: [
-        "images/parsers/screenshot1.png"
+        "images/parsers/screenshot1.avif"
     ]
 };
 

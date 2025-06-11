@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Preload image -->
+    <link rel="preload" as="image" href="images/pfp.jpg">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -12,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Meta -->
+    <meta name="description" content="Albert Kurto's Portfolio">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
@@ -37,10 +41,10 @@
 
                 <!-- Social -->
                 <div class="navbar-nav flex-row gap-2">
-                    <a href="https://github.com/Albro21" target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/albert-kurto-3370a134a/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://www.instagram.com/_albro21_" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a class="me-4 me-lg-5" href="https://t.me/albro21" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://github.com/Albro21" target="_blank" aria-label="Github Profile"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/albert-kurto-3370a134a/" target="_blank" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_albro21_" target="_blank" aria-label="Instagram Profile"><i class="bi bi-instagram"></i></a>
+                    <a class="me-4 me-lg-5" href="https://t.me/albro21" target="_blank" aria-label="Telegram Profile"><i class="bi bi-telegram"></i></a>
                     <a href="#"><i class="bi bi-circle-half" id="themeToggle" onclick="toggleTheme()"></i></a>
                 </div>
             </div>
@@ -57,7 +61,7 @@
 
                     <!-- Profile Image -->
                     <div class="col-md-4 text-center mb-4 mb-md-0">
-                        <img src="images/pfp.jpg" alt="Albert Kurto" class="img-fluid rounded-circle">
+                        <img src="images/pfp.avif" alt="Albert Kurto" class="img-fluid rounded-circle" fetchpriority="high">
                     </div>
 
                     <!-- About Me Text -->
@@ -85,7 +89,7 @@
                 <h2 class="mb-4 text-center">SKILLS & TECHNOLOGIES</h2>
 
                 <!-- Languages -->
-                <h5 class="mt-4 fw-bold">Languages</h5>
+                <h4 class="mt-4 fw-bold">Languages</h4>
                 <div class="row text-center">
                     <div class="col-6 col-md-2 mb-4">
                         <i class="bi bi-filetype-py fs-1 mb-2 primary-color"></i>
@@ -106,7 +110,7 @@
                 </div>
 
                 <!-- Frameworks, Tools & Libraries -->
-                <h5 class="mt-4 fw-bold">Frameworks, Tools & Libraries</h5>
+                <h4 class="mt-4 fw-bold">Frameworks, Tools & Libraries</h4>
                 <div class="row text-center">
                     <div class="col-6 col-md-2 mb-4">
                         <i class="bi bi-database fs-1 mb-2 primary-color"></i>
@@ -162,12 +166,12 @@
                 </div>
                 <div class="col-12 col-lg-6 text-center">
                     <div class="position-relative">
-                        <img id="gallery1" src="images/timetracker/screenshot1.png" class="img-fluid gallery-img"
+                        <img id="gallery1" src="images/timetracker/screenshot1.avif" class="img-fluid gallery-img"
                             alt="Company Management System">
-                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(1)">
+                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(1)" aria-label="Previous Image">
                             <i class="bi bi-chevron-left"></i>
                         </button>
-                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(1)">
+                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(1)" aria-label="Next Image">
                             <i class="bi bi-chevron-right"></i>
                         </button>
                     </div>
@@ -194,12 +198,12 @@
                 </div>
                 <div class="col-12 col-lg-6 text-center">
                     <div class="position-relative">
-                        <img id="gallery2" src="images/typing/screenshot1.png" class="img-fluid gallery-img"
+                        <img id="gallery2" src="images/typing/screenshot1.avif" class="img-fluid gallery-img"
                             alt="Speed Typing Website">
-                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(2)">
+                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(2)" aria-label="Previous Image">
                             <i class="bi bi-chevron-left"></i>
                         </button>
-                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(2)">
+                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(2)" aria-label="Next Image">
                             <i class="bi bi-chevron-right"></i>
                         </button>
                     </div>
@@ -222,12 +226,12 @@
                 </div>
                 <div class="col-12 col-lg-6 text-center">
                     <div class="position-relative">
-                        <img id="gallery3" src="images/parsers/screenshot1.png" class="img-fluid gallery-img"
+                        <img id="gallery3" src="images/parsers/screenshot1.avif" class="img-fluid gallery-img"
                             alt="Web Parsers">
-                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(4)">
+                        <button class="btn position-absolute top-50 start-0 translate-middle-y" onclick="prevImage(3)" aria-label="Previous Image">
                             <i class="bi bi-chevron-left"></i>
                         </button>
-                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(4)">
+                        <button class="btn position-absolute top-50 end-0 translate-middle-y" onclick="nextImage(3)" aria-label="Next Image">
                             <i class="bi bi-chevron-right"></i>
                         </button>
                     </div>
@@ -248,7 +252,7 @@
                         <p class="mb-1">Duration: 4 Years</p>
                         <p class="mb-3">Location: Riga, Latvia</p>
                     </div>
-                    <img src="images/rtk.png" alt="RTK Logo" height="120">
+                    <img src="images/rtk.avif" alt="RTK Logo" height="120">
                 </div>
                 <p>
                     Currently enrolled in a 4-year Computing & ICT program where I’ve gained foundational and advanced
@@ -309,10 +313,10 @@
                     </ul>
                     <!-- Social Icons -->
                     <div class="d-flex gap-3 fs-4">
-                        <a class="nav-link" href="https://github.com/Albro21" target="_blank"><i class="bi bi-github"></i></a>
-                        <a class="nav-link" href="https://www.linkedin.com/in/albert-kurto-3370a134a/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a class="nav-link" href="https://www.instagram.com/_albro21_" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a class="nav-link" href="https://t.me/albro21" target="_blank"><i class="bi bi-telegram"></i></a>
+                        <a class="nav-link" href="https://github.com/Albro21" target="_blank" aria-label="Github Profile"><i class="bi bi-github"></i></a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/albert-kurto-3370a134a/" target="_blank" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
+                        <a class="nav-link" href="https://www.instagram.com/_albro21_" target="_blank" aria-label="Instagram Profile"><i class="bi bi-instagram"></i></a>
+                        <a class="nav-link" href="https://t.me/albro21" target="_blank" aria-label="Telegram Profile"><i class="bi bi-telegram"></i></a>
                     </div>
                 </div>
                 <form method="POST" class="col-12 col-lg-9 d-flex flex-column">
