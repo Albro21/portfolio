@@ -63,21 +63,21 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="main d-flex flex-column gap-5 gap-lg-5">
+    <div class="main d-flex flex-column gap-lg-5">
 
         <!-- About Me -->
         <section id="about" class="container my-5">
             <div class="row align-items-center">
 
                 <!-- About Me Text -->
-                <div class="col-md-6">
+                <div class="col-12 col-lg-6 d-flex flex-column align-items-center align-items-lg-start mb-5 mb-lg-0">
                     <p class="merienda fade-in" id="greeting">Hello! My name is,</>
                     <h1 class="gradient-text merienda fade-in" id="name">Albert</h1>
-                    <p class="merienda fade-in" id="intro-text">
+                    <p class="merienda fade-in text-center text-lg-start" id="intro-text">
                         I'm a <span class="gradient-text fade-in">Backend Developer</span><br>
                         I turn ideas into working solutions.
                     </p>
-                    <div class="d-flex gap-5 fs-1 mt-4">
+                    <div class="d-flex gap-5 fs-1 mt-4 justify-content-center justify-content-lg-start">
                         <a href="https://github.com/Albro21" target="_blank" aria-label="Github Profile">
                             <i class="bi bi-github gradient-text fade-in"></i>
                         </a>
@@ -94,7 +94,7 @@
                 </div>
 
                 <!-- Portrait -->
-                <div class="col-md-5 text-center mb-4 mb-md-0 fade-in">
+                <div class="col-12 col-lg-5 text-center mb-4 mb-md-0 fade-in">
                     <div class="gradient-outline fade-in rounded-circle" style="padding: 6px">
                         <img src="images/portrait.jpeg" alt="Albert Kurto" class="img-fluid rounded-circle"
                             fetchpriority="high" id="portrait" />
@@ -105,12 +105,12 @@
 
         <!-- Tech Stack -->
         <section id="skills" class="container my-5 d-flex flex-column align-items-center">
-            <h2 class="section-title text-center gradient-text merienda fade-in mb-4">Tech Stack</h2>
+            <h2 class="section-title text-center gradient-text merienda fade-in mb-4 w-100">Tech Stack</h2>
 
             <!-- WEB -->
             <div class="d-flex flex-column gap-2">
                 <h3 class="gradient-text merienda fade-in text-center">WEB</h3>
-                <div class="d-flex gap-2">
+                <div class="d-flex flex-wrap justify-content-center gap-2">
                     <div class="gradient-outline fade-in rounded">
                         <div class="card gap-2 p-3 skill-card">
                             <img src="images/skills/django.svg" alt="Django Logo" height="45" width="45">
@@ -162,11 +162,11 @@
                 </div>
             </div>
 
-            <div class="d-flex gap-5">
+            <div class="d-flex flex-wrap justify-content-center gap-lg-5">
                 <!-- Python Libraries -->
                 <div class="d-flex flex-column gap-2">
                     <h3 class="gradient-text merienda fade-in text-center mt-4">Python Libraries</h3>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
                         <div class="gradient-outline fade-in rounded">
                             <div class="card gap-2 p-3 skill-card">
                                 <img src="images/skills/requests.svg" alt="Requests Logo" height="45" width="45">
@@ -191,7 +191,7 @@
                 <!-- Languages -->
                 <div class="d-flex flex-column gap-2">
                     <h3 class="gradient-text merienda fade-in text-center mt-4">Languages</h3>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
                         <div class="gradient-outline fade-in rounded">
                             <div class="card gap-2 p-3 skill-card">
                                 <img src="images/skills/python.svg" alt="Python Logo" height="45" width="45">
@@ -222,7 +222,7 @@
                 <!-- Other -->
                 <div class="d-flex flex-column gap-2">
                     <h3 class="gradient-text merienda fade-in text-center mt-4">Other</h3>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
                         <div class="gradient-outline fade-in rounded">
                             <div class="card gap-2 p-3 skill-card">
                                 <img src="images/skills/git.svg" alt="Git Logo" height="45" width="45">
@@ -247,13 +247,13 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="container my-5 d-flex flex-column">
-            <h2 class="section-title text-center gradient-text merienda fade-in mb-4">Projects</h2>
+        <section id="projects" class="container my-5 flex-column">
+            <h2 class="section-title text-center gradient-text merienda fade-in mb-4 w-100">Projects</h2>
 
             <div class="row">
 
                 <!-- Company Management Website -->
-                <div class="col">
+                <div class="col-12 col-lg-4">
                     <div class="gradient-outline fade-in rounded h-100">
                         <div class="card project-card h-100">
                             <div class="position-relative">
@@ -289,7 +289,7 @@
                 </div>
 
                 <!-- Roguelike Game -->
-                <div class="col">
+                <div class="col-12 col-lg-4 my-5 my-lg-0">
                     <div class="gradient-outline fade-in rounded h-100">
                         <div class="card project-card h-100">
                             <img src="images/game/game.gif" class="img-fluid rounded-top fade-in" alt="Roguelike Game Gif">
@@ -303,7 +303,7 @@
                                 <p class="mb-auto fade-in">
                                     Designed as a school project.
                                 </p>
-                                <div class="d-flex flex-column gap-2">
+                                <div class="d-flex flex-column gap-2 mt-3">
                                     <div class="gradient-outline fade-in rounded">
                                         <a href="https://github.com/Albro21/game" class="btn gradient-btn rounded w-100" target="_blank">Github</a>
                                     </div>
@@ -317,7 +317,7 @@
                 </div>
 
                 <!-- Speed Typing Website -->
-                <div class="col">
+                <div class="col-12 col-lg-4">
                     <div class="gradient-outline fade-in rounded h-100">
                         <div class="card project-card h-100">
                             <div class="position-relative">
@@ -332,15 +332,15 @@
                             </div>
                             <div class="p-3 d-flex flex-column h-100">
                                 <h5 class="gradient-text merienda fade-in mb-3">Speed Typing Website</h3>
-                                <p class="fade-in">
+                                <p class="fade-in" style="text-align: justify;">
                                     A responsive typing platform designed to help users improve their typing speed and accuracy.
                                     Includes live challenges, error tracking, speed stats, and detailed performance reports.
                                 </p>
-                                <p class="mb-auto fade-in">
+                                <p class="mb-auto fade-in" style="text-align: justify;">
                                     Users get WPM, accuracy, improvement charts, and a personalized dashboard. Great for anyone
                                     wanting to practice typing efficiently.
                                 </p>
-                                <div class="gradient-outline fade-in rounded">
+                                <div class="gradient-outline fade-in rounded mt-3">
                                     <a href="https://github.com/Albro21/speed_typing_website" class="btn gradient-btn rounded w-100" target="_blank">Github</a>
                                 </div>
                             </div>
@@ -352,7 +352,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="mt-5">
+    <footer class="mt-lg-5">
         <div class="container d-flex flex-column align-items-center p-4 gap-2">
             <h6 class="fade-in">Alberts Kurto | Portfolio</h6>
             <!-- Social -->

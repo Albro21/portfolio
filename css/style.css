@@ -131,3 +131,22 @@ h1, h2, h3, h4, h5, h6 {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 800px) {
+    #greeting {
+        font-size: 2rem;
+    }
+    
+    #name {
+        font-size: 6rem;
+    }
+    
+    #intro-text {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
