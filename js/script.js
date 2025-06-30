@@ -1,18 +1,18 @@
 const galleries = {
     1: [
-        "images/timetracker/screenshot1.avif",
-        "images/timetracker/screenshot2.avif",
-        "images/timetracker/screenshot3.avif",
-        "images/timetracker/screenshot4.avif",
-        "images/timetracker/screenshot5.avif",
-        "images/timetracker/screenshot6.avif"
+        "assets/images/timetracker/screenshot1.avif",
+        "assets/images/timetracker/screenshot2.avif",
+        "assets/images/timetracker/screenshot3.avif",
+        "assets/images/timetracker/screenshot4.avif",
+        "assets/images/timetracker/screenshot5.avif",
+        "assets/images/timetracker/screenshot6.avif"
     ],
     2: [
-        "images/typing/screenshot1.avif",
-        "images/typing/screenshot2.avif",
-        "images/typing/screenshot3.avif",
-        "images/typing/screenshot4.avif",
-        "images/typing/screenshot5.avif"
+        "assets/images/typing/screenshot1.avif",
+        "assets/images/typing/screenshot2.avif",
+        "assets/images/typing/screenshot3.avif",
+        "assets/images/typing/screenshot4.avif",
+        "assets/images/typing/screenshot5.avif"
     ]
 };
 
@@ -53,3 +53,22 @@ window.addEventListener('DOMContentLoaded', () => {
 
     fadeEls.forEach(el => observer.observe(el));
 });
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.7
+    );
+}
+
+function checkSlideIn() {
+    const elements = document.querySelectorAll('.about-paragraph');
+    elements.forEach(el => {
+        if (isElementInViewport(el)) {
+            el.classList.add('slide-in');
+        }
+    });
+}
+
+window.addEventListener('scroll', checkSlideIn);
+window.addEventListener('load', checkSlideIn);

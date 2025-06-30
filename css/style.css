@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* About me Section */
+/* Introduction Section */
 
 #greeting {
     font-size: 3rem;
@@ -101,6 +101,17 @@ h1, h2, h3, h4, h5, h6 {
 #intro-text {
     font-size: 2rem;
     margin-bottom: 0;
+}
+
+
+/* About Me Section */
+
+.about-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Skills Section */
