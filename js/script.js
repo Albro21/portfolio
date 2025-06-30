@@ -34,3 +34,22 @@ function nextImage(id) {
     indices[id] = (indices[id] + 1) % galleries[id].length;
     showImage(id);
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    const fadeEls = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                el.style.animationDelay = `${i * 100}ms`;
+                el.classList.add('fade-in-visible');
+                observer.unobserve(el);
+            }
+        });
+    }, {
+        threshold: 0.1,
+    });
+
+    fadeEls.forEach(el => observer.observe(el));
+});
