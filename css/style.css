@@ -147,11 +147,11 @@ h1, h2, h3, h4, h5, h6 {
     #greeting {
         font-size: 2rem;
     }
-    
+
     #name {
         font-size: 6rem;
     }
-    
+
     #intro-text {
         font-size: 1.5rem;
     }
@@ -160,4 +160,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
         font-weight: bold;
     }
+
+    .about-paragraph {
+    font-size: 0.9rem;
+}
 }
