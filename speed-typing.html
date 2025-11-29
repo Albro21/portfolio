@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NWKNVMBP');</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpeedTyping - Albert Kurto</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c1b39fa0dc.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/output.css">
+
+  <!-- Custom JS -->
+  <script src="js/script.js" defer></script>
+
+  <!-- Meta -->
+  <meta name="description" content="SpeedTyping - Speed Typing Practice & Analytics Platform by Albert Kurto. A comprehensive web-based platform built with Django featuring real-time performance tracking, achievement systems, and competitive leaderboards.">
+  <meta name="keywords" content="SpeedTyping, typing practice, Django, Python, Chart.js, Bootstrap, performance analytics, web application, Albert Kurto">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="SpeedTyping - Speed Typing Practice & Analytics Platform">
+  <meta property="og:description" content="A web-based typing practice platform with structured practice sessions, detailed performance analytics, achievement systems, and competitive leaderboards.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.albert-kurto.com/speed-typing.html">
+  <meta property="og:image" content="https://www.albert-kurto.com/assets/images/typing/screenshot1.avif">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SpeedTyping - Speed Typing Practice & Analytics Platform">
+  <meta name="twitter:description" content="A web-based typing practice platform with structured practice sessions, detailed performance analytics, achievement systems, and competitive leaderboards.">
+  <meta name="twitter:image" content="https://www.albert-kurto.com/assets/images/typing/screenshot1.avif">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "SpeedTyping",
+      "description": "Speed Typing Practice & Analytics Platform with real-time performance tracking",
+      "url": "https://www.albert-kurto.com/speed-typing.html",
+      "author": {
+        "@type": "Person",
+        "name": "Albert Kurto",
+        "url": "https://www.albert-kurto.com"
+      },
+      "image": "https://www.albert-kurto.com/assets/images/typing/screenshot1.avif"
+    }
+  </script>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicons/android-chrome-512x512.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+
+  <!-- Custom Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-slate-100">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWKNVMBP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md" id="navbar-scroll">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a class="font-['Merienda'] font-medium text-xl gradient-text fade-in" href="index.html">← Back to Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="pt-32 pb-20">
+    <article class="max-w-5xl mx-auto px-4 mb-12">
+      
+      <!-- Header -->
+      <header class="mb-12">
+        <h1 class="gradient-text font-['Merienda'] font-bold text-6xl max-md:text-4xl mb-4 fade-in leading-relaxed">SpeedTyping</h1>
+        <p class="text-2xl text-slate-300 mb-6 fade-in leading-relaxed">Speed Typing Practice & Analytics Platform</p>
+        
+        <!-- Status Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-lg mb-6">
+          <i class="fa-solid fa-pause text-yellow-500"></i>
+          <span class="text-yellow-500 font-medium">Development paused to focus on higher-priority projects</span>
+        </div>
+
+        <!-- Links -->
+        <div class="flex flex-wrap gap-3 mt-6">
+          <div class="gradient-outline fade-in rounded p-1">
+            <a href="https://github.com/Albro21/speed_typing_website" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-900 transition-colors" target="_blank">
+              <i class="fa-brands fa-github mr-2"></i>View Source
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Gallery -->
+      <section class="mb-12 fade-in">
+        <div class="relative overflow-hidden rounded-lg">
+          <img id="speedTypingGallery" src="assets/images/typing/screenshot1.avif" class="w-full rounded-lg block transition-all duration-500 ease-in-out" alt="SpeedTyping Screenshot" style="transform: translateX(0);">
+          <button class="absolute top-1/2 left-4 -translate-y-1/2 p-3 text-white hover:scale-110 transition-transform z-10" onclick="prevSpeedTypingImage()" aria-label="Previous Image">
+            <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
+          </button>
+          <button class="absolute top-1/2 right-4 -translate-y-1/2 p-3 text-white hover:scale-110 transition-transform z-10" onclick="nextSpeedTypingImage()" aria-label="Next Image">
+            <i class="fa-solid fa-chevron-right gradient-text text-2xl"></i>
+          </button>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 px-4 py-2 rounded-full text-sm" id="speedTypingCounter">1 / 5</div>
+        </div>
+      </section>
+
+      <!-- Project Overview -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Project Overview</h2>
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">
+            SpeedTyping is a web-based typing practice platform designed to help users improve their typing speed and accuracy through structured practice sessions and detailed performance analytics. The application provides timed and fixed-length typing tests, real-time performance tracking, achievement systems, and competitive leaderboards.
+          </p>
+          <p class="fade-in">
+            While the project contains all core features and is functionally complete, I had to pause development to focus on other projects that became higher priorities. The codebase demonstrates solid Django patterns, interactive frontend features, and comprehensive data visualization techniques.
+          </p>
+        </div>
+      </section>
+
+      <!-- Technical Stack -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Technical Stack</h2>
+        
+        <!-- Tech Stack Icons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/django.svg" alt="Django" height="35" width="35">
+              <span class="text-xs text-slate-200">Django</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/python.svg" alt="Python" height="35" width="35">
+              <span class="text-xs text-slate-200">Python</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/bootstrap.svg" alt="Bootstrap" height="35" width="35">
+              <span class="text-xs text-slate-200">Bootstrap</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/chartjs.svg" alt="Chart.js" height="35" width="35">
+              <span class="text-xs text-slate-200">Chart.js</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/js.svg" alt="JavaScript" height="35" width="35">
+              <span class="text-xs text-slate-200">JavaScript</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/sqlite.svg" alt="SQLite" height="35" width="35">
+              <span class="text-xs text-slate-200">SQLite</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="space-y-6">
+          <!-- Backend -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">Backend</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li><strong class="text-slate-200">Django 5.2.4</strong> — High-level Python web framework</li>
+              <li><strong class="text-slate-200">Python</strong> — Core programming language</li>
+              <li><strong class="text-slate-200">SQLite</strong> — Database for development (production migration planned)</li>
+              <li><strong class="text-slate-200">Custom User Model</strong> — Extended Django authentication with email-based login</li>
+              <li><strong class="text-slate-200">Signal-Based Architecture</strong> — Automated user leveling and achievement unlocking</li>
+            </ul>
+          </div>
+
+          <!-- Frontend -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">Frontend</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li><strong class="text-slate-200">Bootstrap 5.3</strong> — Responsive UI framework</li>
+              <li><strong class="text-slate-200">Chart.js</strong> — Dynamic performance visualization and analytics</li>
+              <li><strong class="text-slate-200">Vanilla JavaScript</strong> — Client-side typing mechanics and real-time calculations</li>
+              <li><strong class="text-slate-200">Custom CSS with Theme System</strong> — Dark/light mode with CSS variable-based theming</li>
+            </ul>
+          </div>
+
+          <!-- External Libraries -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">External Libraries</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li><strong class="text-slate-200">Wonderwords</strong> — Random word generation for practice texts</li>
+              <li><strong class="text-slate-200">Python Decouple</strong> — Environment configuration management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Features -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Core Features</h2>
+        
+        <div class="space-y-6">
+          <!-- Dual Test Modes -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">⏱️ Dual Test Modes</h3>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Timed Tests</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Configurable durations (30s, 1m, 3m, 5m)</li>
+                  <li>Real-time WPM and accuracy calculations</li>
+                  <li>Speed curve tracking for performance analysis</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Fixed-Length Tests</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Word-count based tests (25, 50, 100, 300 words)</li>
+                  <li>Elapsed time tracking</li>
+                  <li>Completion-based metrics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Variety -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">📝 Content Variety</h3>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Story & Article Mode</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Curated texts with difficulty ratings</li>
+                  <li>Categorized by length (short, medium, long)</li>
+                  <li>Optional modifiers (more numbers, punctuation, capitals)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Random Words Mode</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>AI-powered word generation</li>
+                  <li>Three difficulty levels (easy, medium, hard)</li>
+                  <li>Customizable word counts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced Analytics -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">📊 Advanced Analytics Dashboard</h3>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Performance Metrics</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Average WPM and accuracy across all tests</li>
+                  <li>Total typing time with formatted display</li>
+                  <li>Completed test count</li>
+                  <li>Historical trend analysis</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Visual Analytics</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Multi-period history chart (daily, weekly, monthly, all-time)</li>
+                  <li>Dual-axis visualization (WPM + accuracy)</li>
+                  <li>Mistake frequency analysis by letter</li>
+                  <li>Customizable chart types (pie, polar area)</li>
+                  <li>Configurable data display limits</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Detailed Test Results</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Per-letter mistake tracking</li>
+                  <li>Average keystroke delay analysis</li>
+                  <li>Second-by-second speed curve visualization</li>
+                  <li>Three specialized charts per result (speed over time, mistakes per letter, delay per letter)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gamification System -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🎮 Gamification System</h3>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Level Progression</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Experience points earned per second typed</li>
+                  <li>Automatic level advancement with overflow XP handling</li>
+                  <li>Level titles and descriptions</li>
+                  <li>Progress bar visualization</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Achievement System</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Multi-category achievements (WPM milestones, accuracy targets, test completion counts, total typing time, level progression)</li>
+                  <li>Tiered achievement levels within categories</li>
+                  <li>Automatic duplicate prevention</li>
+                  <li>Toast notifications for new unlocks</li>
+                  <li>Achievement showcase on profile</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Daily Goals</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Customizable time-based goals (5-30 minutes)</li>
+                  <li>SVG-based circular progress indicator</li>
+                  <li>Real-time progress tracking</li>
+                  <li>Persistent goal configuration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Features -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🏆 Social Features</h3>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Leaderboards</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Multiple ranking categories (Average WPM, Tests completed, Total typing time)</li>
+                  <li>Time-based filtering (daily, weekly, monthly, all-time)</li>
+                  <li>Top 50 rankings per category</li>
+                  <li>User-specific performance details</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">User Profiles</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Customizable profile pictures</li>
+                  <li>Bio and nickname system</li>
+                  <li>Achievement gallery display</li>
+                  <li>Test history with pagination</li>
+                  <li>Best performance by duration</li>
+                  <li>Detailed statistics overview</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Theme System -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🎨 Theme System</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>User-specific theme preferences</li>
+              <li>Server-side theme persistence</li>
+              <li>CSS variable-based implementation</li>
+              <li>Instant theme switching</li>
+              <li>Separate theme stylesheets for dark/light modes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advanced Implementation -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Advanced Implementation Details</h2>
+        
+        <div class="space-y-6">
+          <!-- Real-Time Typing Engine -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">Real-Time Typing Engine</h3>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Sophisticated Input Handling</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Character-by-character validation</li>
+                  <li>Backspace correction support</li>
+                  <li>Visual feedback system (color-coded letters)</li>
+                  <li>Automatic text scrolling</li>
+                  <li>Line-by-line progression tracking</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Performance Calculations</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Rolling 5-second WPM window</li>
+                  <li>Timeline-based accuracy tracking</li>
+                  <li>Per-character timing measurements</li>
+                  <li>Mistyped letter frequency counting</li>
+                  <li>Speed curve generation for charting</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Architecture -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">Data Architecture</h3>
+            <div class="ml-4">
+              <h4 class="text-lg font-medium text-slate-200 mb-2">Custom User Model</h4>
+              <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                <li>Email-based authentication (no username)</li>
+                <li>Profile customization fields</li>
+                <li>Level and XP tracking</li>
+                <li>Daily goal management</li>
+                <li>Theme preference storage</li>
+                <li>Calculated properties for performance metrics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Chart Visualization -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">Chart Visualization</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>Chart.js with ChartDataLabels plugin</li>
+              <li>Responsive chart sizing</li>
+              <li>Dual-axis configuration for history charts</li>
+              <li>Custom tooltip formatting</li>
+              <li>Dynamic data filtering by time period</li>
+              <li>Chart type toggling with saved preferences</li>
+            </ul>
+          </div>
+
+          <!-- Security Features -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">Security Features</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>Login-required protection on all user-specific pages</li>
+              <li>CSRF token validation on forms</li>
+              <li>Secure password reset flow with email verification</li>
+              <li>Custom user manager for safe user creation</li>
+              <li>Server-side form validation and input sanitization</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Status -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Project Status & Future Potential</h2>
+        
+        <div class="space-y-6">
+          <!-- Completed Features -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">✅ Completed Features</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>Full typing test implementation (timed and fixed-length)</li>
+              <li>Real-time performance metrics</li>
+              <li>Comprehensive analytics dashboard</li>
+              <li>Achievement and leveling system</li>
+              <li>Leaderboard functionality</li>
+              <li>User profile customization</li>
+              <li>Theme system</li>
+              <li>Password reset flow</li>
+            </ul>
+          </div>
+
+          <!-- Known Limitations -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">⚠️ Known Limitations</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>No production deployment configuration</li>
+              <li>Missing comprehensive test coverage</li>
+              <li>Limited error handling in some edge cases</li>
+              <li>No admin content management interface for stories/articles</li>
+              <li>Email configuration requires external SMTP setup</li>
+            </ul>
+          </div>
+
+          <!-- Potential Enhancements -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🚀 Potential Enhancements</h3>
+            <p class="text-slate-300 mb-3">If development were to resume, priority features would include:</p>
+            <div class="ml-4 space-y-3">
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Practice Mode Improvements</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Focused practice on weak letters</li>
+                  <li>Custom text import</li>
+                  <li>Typing drills for specific patterns</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Social Features</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>Multiplayer typing races</li>
+                  <li>Friend system and private leaderboards</li>
+                  <li>Challenge sharing</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-lg font-medium text-slate-200 mb-2">Technical Improvements</h4>
+                <ul class="list-disc list-inside space-y-1 text-slate-300 ml-4">
+                  <li>PostgreSQL migration</li>
+                  <li>Production deployment with Gunicorn/Nginx</li>
+                  <li>Comprehensive test suite</li>
+                  <li>API endpoints for mobile app potential</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Development Journey -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Development Journey</h2>
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">
+            This project helped me learn a lot about Django's capabilities, particularly working with complex model relationships, signal-based logic for automatic user progression, frontend integration with interactive JavaScript features, and data visualization with Chart.js.
+          </p>
+          <p class="fade-in">
+            The typing engine itself required careful attention to edge cases and user experience details that weren't immediately obvious when I started building it. Creating real-time calculations for WPM, accuracy tracking, and performance metrics taught me valuable lessons about client-side performance optimization.
+          </p>
+          <p class="fade-in">
+            While I had to pause this project before getting it production-ready, it was a great learning experience in building a feature-complete web application with real-time interactions and comprehensive user analytics. The project demonstrates solid Django patterns, complex frontend interactions, and thorough attention to user experience.
+          </p>
+          <p class="fade-in italic text-slate-400 border-l-4 border-gray-700 pl-4">
+            Building a complete typing platform from scratch taught me the importance of planning data structures, handling edge cases in real-time interactions, and creating engaging user experiences through gamification.
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-gray-800/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <a href="index.html" class="gradient-text font-['Merienda'] hover:opacity-80 transition-opacity">← Back to Portfolio</a>
+        <p class="text-xs text-slate-600 mt-4">&copy; 2025 Albert Kurto</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

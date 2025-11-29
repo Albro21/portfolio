@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Remove scrollbar */
+html, body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gradient text and outline effects */
+.gradient-text {
+    background: linear-gradient(270deg, #7b2ff7, #004fb6, #ff6ec4, #ef9306, #de1058, #7b2ff7);
+    background-size: 400% 100%;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-wave 15s linear infinite;
+}
+
+.gradient-outline {
+    background: linear-gradient(270deg, #7b2ff7, #0061e0, #ff6ec4, #ef9306, #de1058, #7b2ff7);
+    background-size: 400% 100%;
+    animation: gradient-wave 15s linear infinite;
+}
+
+/* Fade in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in-visible {
+    animation: fadeInUp 0.6s ease-out forwards, gradient-wave 15s linear infinite;
+}
+
+/* Animations */
+@keyframes gradient-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

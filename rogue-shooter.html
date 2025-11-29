@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NWKNVMBP');</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rogue Shooter - Albert Kurto</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c1b39fa0dc.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/output.css">
+
+  <!-- Custom JS -->
+  <script src="js/script.js" defer></script>
+
+  <!-- Meta -->
+  <meta name="description" content="Rogue Shooter - Roguelike Top-Down Shooter by Albert Kurto. A fast-paced browser game built with JavaScript and Bootstrap featuring dynamic difficulty scaling, 12+ unique upgrades, and 8 enemy types.">
+  <meta name="keywords" content="Rogue Shooter, roguelike game, JavaScript game, browser game, top-down shooter, school project, game development, Albert Kurto">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rogue Shooter - Roguelike Top-Down Shooter">
+  <meta property="og:description" content="A fast-paced browser game where you blast through waves of enemies, unlock powerful upgrades, and adapt to an ever-increasing difficulty curve.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.albert-kurto.com/rogue-shooter.html">
+  <meta property="og:image" content="https://www.albert-kurto.com/assets/images/game/game.gif">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rogue Shooter - Roguelike Top-Down Shooter">
+  <meta name="twitter:description" content="A fast-paced browser game where you blast through waves of enemies, unlock powerful upgrades, and adapt to an ever-increasing difficulty curve.">
+  <meta name="twitter:image" content="https://www.albert-kurto.com/assets/images/game/game.gif">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Rogue Shooter",
+      "description": "Roguelike Top-Down Shooter game built with pure JavaScript",
+      "url": "https://www.albert-kurto.com/rogue-shooter.html",
+      "author": {
+        "@type": "Person",
+        "name": "Albert Kurto",
+        "url": "https://www.albert-kurto.com"
+      },
+      "image": "https://www.albert-kurto.com/assets/images/game/game.gif"
+    }
+  </script>
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/favicons/android-chrome-512x512.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+
+  <!-- Custom Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-slate-100">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWKNVMBP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md" id="navbar-scroll">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a class="font-['Merienda'] font-medium text-xl gradient-text fade-in" href="index.html">← Back to Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="pt-32 pb-20">
+    <article class="max-w-5xl mx-auto px-4 mb-12">
+      
+      <!-- Header -->
+      <header class="mb-12">
+        <h1 class="gradient-text font-['Merienda'] font-bold text-6xl max-md:text-4xl mb-4 fade-in leading-relaxed">Rogue Shooter</h1>
+        <p class="text-2xl text-slate-300 mb-6 fade-in leading-relaxed">Roguelike Top-Down Shooter</p>
+        
+        <!-- Links -->
+        <div class="flex flex-wrap gap-3 mb-6">
+          <div class="gradient-outline fade-in rounded p-1">
+            <a href="https://albro21.github.io/game/" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-900 transition-colors" target="_blank">
+              <i class="fa-solid fa-gamepad mr-2"></i>Play Game
+            </a>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <a href="https://github.com/Albro21/game" class="inline-block px-6 py-3 bg-black text-white rounded hover:bg-gray-900 transition-colors" target="_blank">
+              <i class="fa-brands fa-github mr-2"></i>View Source
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Gameplay Demo -->
+      <section class="mb-12 fade-in">
+        <div class="relative overflow-hidden rounded-lg">
+          <img src="assets/images/game/game.gif" alt="Rogue Shooter Gameplay Demo" class="w-full rounded-lg">
+        </div>
+      </section>
+
+      <!-- Project Overview -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Project Overview</h2>
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">
+            Rogue Shooter is a fast-paced browser-based roguelike top-down shooter where you blast through waves of enemies, unlock powerful upgrades, and adapt to an ever-increasing difficulty curve. Built as a school project, this game features a full weapon system, 12+ unique upgrades, 8 different enemy types, and a dynamic difficulty system that scales with your progress.
+          </p>
+          <p class="fade-in">
+            This was my first time creating a game from scratch and my first project built entirely with pure JavaScript. Based on the <a href="https://github.com/YuraKoch/gta2" class="gradient-text hover:opacity-80 transition-opacity" target="_blank">GTA2 browser game by YuraKoch</a>, I transformed the original two-enemy concept into a rich roguelike experience with deep gameplay mechanics, player progression, and challenging difficulty scaling.
+          </p>
+          <p class="fade-in italic text-slate-400">
+            <strong>Note:</strong> This is a school project designed for desktop browsers. Mobile version is not supported.
+          </p>
+          <p class="fade-in">
+            <strong class="text-slate-200">Credits:</strong> Huge thanks to <a href="https://github.com/YuraKoch" class="gradient-text hover:opacity-80 transition-opacity" target="_blank">YuraKoch</a> for the original version of the game that served as the foundation for this project.
+          </p>
+        </div>
+      </section>
+
+      <!-- Technical Stack -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Technical Stack</h2>
+        
+        <!-- Tech Stack Icons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/js.svg" alt="JavaScript" height="35" width="35">
+              <span class="text-xs text-slate-200">JavaScript</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/html.svg" alt="HTML5" height="35" width="35">
+              <span class="text-xs text-slate-200">HTML5</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/css.svg" alt="CSS3" height="35" width="35">
+              <span class="text-xs text-slate-200">CSS3</span>
+            </div>
+          </div>
+          <div class="gradient-outline fade-in rounded p-1">
+            <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
+              <img src="assets/images/skills/bootstrap.svg" alt="Bootstrap" height="35" width="35">
+              <span class="text-xs text-slate-200">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">
+            Built with <strong class="text-slate-200">pure JavaScript</strong> using HTML5 Canvas for rendering game mechanics, physics, and animations. The UI leverages <strong class="text-slate-200">Bootstrap</strong> for responsive layout and styling of menus, buttons, and upgrade cards. The game features custom object-oriented design with classes for weapons, enemies, bullets, and upgrades.
+          </p>
+        </div>
+      </section>
+
+      <!-- Core Features -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Core Features</h2>
+        
+        <div class="space-y-6">
+          <!-- Weapon System -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🔫 Advanced Weapon System</h3>
+            <p class="text-slate-300 mb-3">Created a comprehensive <code class="text-pink-400">Weapon</code> class supporting:</p>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li><strong class="text-slate-200">Automatic fire</strong> with customizable fire rate</li>
+              <li><strong class="text-slate-200">Dynamic damage scaling</strong></li>
+              <li><strong class="text-slate-200">Bullet penetration</strong> system</li>
+              <li><strong class="text-slate-200">Upgrade modifiers</strong> that affect weapon behavior</li>
+            </ul>
+            <p class="text-slate-300 mt-3">Special <code class="text-pink-400">ShotgunWeapon</code> subclass fires 6 bullets in a random spread with unique stats including fixed fire rate and disabled bullet splitting.</p>
+          </div>
+
+          <!-- Upgrade System -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">💎 Upgrade System (12 Unique Upgrades)</h3>
+            <p class="text-slate-300 mb-3">When you score enough points, choose from 3 randomly generated upgrade cards:</p>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>🔥 <strong class="text-slate-200">Double Fire Rate</strong> — Shoot twice as fast</li>
+              <li>💥 <strong class="text-slate-200">2X More Damage</strong> — Double your damage output</li>
+              <li>💖 <strong class="text-slate-200">Restore Health</strong> — Heal yourself instantly</li>
+              <li>🏃 <strong class="text-slate-200">Double Movement Speed</strong> — Move twice as fast</li>
+              <li>🔫 <strong class="text-slate-200">Shotgun Mode</strong> — Switch to shotgun firing pattern</li>
+              <li>🛡️ <strong class="text-slate-200">Bullets Penetrate +1 Enemy</strong> — Bullets pass through enemies</li>
+              <li>🌱 <strong class="text-slate-200">Regenerate +1 HP</strong> — Passive health regeneration</li>
+              <li>❤️ <strong class="text-slate-200">2X Max Health</strong> — Double your maximum health</li>
+              <li>👫 <strong class="text-slate-200">Bullets Split on Hit</strong> — Create additional projectiles</li>
+              <li>🎯 <strong class="text-slate-200">Aim Assist</strong> — Bullets track enemies</li>
+              <li>🔥 <strong class="text-slate-200">Set Enemies on Fire</strong> — Deal damage over time</li>
+            </ul>
+            <p class="text-slate-300 mt-3 italic">Some upgrades don't stack (e.g., Shotgun + Split), while others unlock sequentially (e.g., Split → Super Split). Upgrade cost increases by 1.25x each time.</p>
+          </div>
+
+          <!-- Difficulty System -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🎮 Dynamic Difficulty Scaling</h3>
+            <p class="text-slate-300 mb-3">A global difficulty constant increases by +0.1 with every upgrade, dynamically affecting:</p>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li><strong class="text-slate-200">Enemy Spawn Rate</strong> — From 1s down to 0.2s between spawns</li>
+              <li><strong class="text-slate-200">Enemy Speed</strong> — From 2 up to 6 (player speed is 3)</li>
+              <li><strong class="text-slate-200">Enemy Variety</strong> — 8 different enemy types (10–500 HP)</li>
+              <li><strong class="text-slate-200">Boss Spawning</strong> — 500 HP boss with 0.01%–5% spawn rate based on difficulty</li>
+            </ul>
+            <p class="text-slate-300 mt-3">Score rewards scale with enemy strength: from <strong class="text-slate-200">100</strong> to <strong class="text-slate-200">5000</strong> points per kill.</p>
+          </div>
+
+          <!-- UX Improvements -->
+          <div class="fade-in">
+            <h3 class="text-xl font-semibold text-slate-200 mb-3">🧠 UX & Visual Improvements</h3>
+            <ul class="list-disc list-inside space-y-2 text-slate-300 ml-4">
+              <li>Player and enemy <strong class="text-slate-200">health bars</strong></li>
+              <li><strong class="text-slate-200">Floating damage numbers</strong> for hits and regeneration</li>
+              <li><strong class="text-slate-200">Real-time stats panel</strong> showing Fire Rate, Damage, Speed, and more</li>
+              <li><strong class="text-slate-200">Sound effects</strong> for shooting, damage, death, and upgrades</li>
+              <li><strong class="text-slate-200">Background music</strong> during gameplay</li>
+              <li><strong class="text-slate-200">Start Game</strong> and <strong class="text-slate-200">Play Again</strong> buttons</li>
+              <li><strong class="text-slate-200">Enhanced Game Over screen</strong> with random GIFs</li>
+              <li><strong class="text-slate-200">Zoom scaling disabled</strong> to prevent exploits</li>
+              <li><strong class="text-slate-200">Hell-to-reality background</strong> — Left side looks like hell, gradually transitioning to the real world</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Balance Philosophy -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">💡 Balance Philosophy</h2>
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">
+            The game is designed to be <strong class="text-slate-200">challenging but fair</strong>. Some upgrade combinations can become incredibly powerful (like stacking fire rate multiple times), but that's intentional—part of the roguelike fun is discovering broken builds and becoming unstoppable.
+          </p>
+          <p class="fade-in">
+            The difficulty system ensures that even with powerful upgrades, the game remains challenging. As you grow stronger, enemies spawn faster, move quicker, and become more diverse. The balance is dynamic, adapting to your progression.
+          </p>
+          <p class="fade-in italic text-slate-400">
+            If you manage to become truly unstoppable—you've earned it!
+          </p>
+        </div>
+      </section>
+
+      <!-- Development Journey -->
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Development Journey</h2>
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">
+            This was my <strong class="text-slate-200">first experience creating a game</strong> and my <strong class="text-slate-200">first project built entirely with pure JavaScript</strong>. I chose to base it on YuraKoch's GTA2 browser game because it provided a solid foundation with potential for deep improvements.
+          </p>
+          <p class="fade-in">
+            Starting with a simple two-enemy shooter, I transformed it into a feature-rich roguelike with weapon classes, upgrade systems, dynamic difficulty scaling, visual effects, sound design, and polished UX. Every feature taught me something new about game development, object-oriented programming, and JavaScript capabilities.
+          </p>
+          <p class="fade-in">
+            The game is playable online via GitHub Pages, and the source code is fully public. Feel free to fork it, improve it, or remix it—I'd love to see what others come up with!
+          </p>
+          <p class="fade-in italic text-slate-400 border-l-4 border-gray-700 pl-4">
+            Building this game from scratch taught me more about JavaScript and programming logic than any tutorial ever could. It was challenging, frustrating at times, but incredibly rewarding.
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-gray-800/50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <a href="index.html" class="gradient-text font-['Merienda'] hover:opacity-80 transition-opacity">← Back to Portfolio</a>
+        <p class="text-xs text-slate-600 mt-4">&copy; 2025 Albert Kurto</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
