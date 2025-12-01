@@ -62,6 +62,12 @@
   <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
 
+  <!-- Preload LCP Image -->
+  <link rel="preload" as="image" href="assets/images/portrait-400.avif" type="image/avif" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/portrait.avif" type="image/avif" media="(min-width: 769px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/portrait-400.jpeg" type="image/jpeg" media="(max-width: 768px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/portrait.jpeg" type="image/jpeg" media="(min-width: 769px)" fetchpriority="high">
+
   <!-- Custom Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -148,8 +154,10 @@
         <div class="lg:col-span-5 text-center mb-6 md:mb-0 fade-in">
           <div class="gradient-outline fade-in rounded-full inline-block p-2">
             <picture>
-              <source srcset="assets/images/portrait.avif" type="image/avif">
-              <img src="assets/images/portrait.jpeg" alt="Albert Kurto" class="w-full rounded-full" fetchpriority="high" id="portrait" width="800" height="800" />
+              <source media="(max-width: 768px)" srcset="assets/images/portrait-400.avif" type="image/avif">
+              <source media="(min-width: 769px)" srcset="assets/images/portrait.avif" type="image/avif">
+              <source media="(max-width: 768px)" srcset="assets/images/portrait-400.jpeg" type="image/jpeg">
+              <img src="assets/images/portrait.jpeg" alt="Albert Kurto" class="w-full rounded-full" fetchpriority="high" id="portrait" width="800" height="800" decoding="async" />
             </picture>
           </div>
         </div>
@@ -439,10 +447,9 @@
         <div>
           <div class="gradient-outline fade-in rounded-2xl h-full p-1 hover:scale-[1.02] transition-transform duration-300">
             <div class="bg-black rounded-2xl h-full flex flex-col overflow-hidden">
-              <video class="w-full aspect-video object-cover fade-in" autoplay loop muted playsinline poster="assets/images/game/game-poster.jpg" width="440" height="209">
+              <video class="w-full aspect-video object-cover fade-in" autoplay loop muted playsinline poster="assets/images/game/game-poster.avif" width="440" height="209">
                 <source src="assets/images/game/game.webm" type="video/webm">
                 <source src="assets/images/game/game.mp4" type="video/mp4">
-                <img src="assets/images/game/game.gif" alt="Roguelike Game Gif" class="w-full aspect-video object-cover fade-in">
               </video>
               <div class="p-6 flex flex-col flex-1">
                 <h5 class="gradient-text font-['Merienda'] fade-in mb-4 text-2xl">Rogue Shooter</h5>
