@@ -1,23 +1,23 @@
-# 🌐 My Portfolio
+# Albert Kurto - Portfolio
 
-This is my first time creating something that actually looks good!
+My personal portfolio website showcasing backend development projects and skills.
 
-It's a minimal, responsive portfolio that showcases my skills and projects.  
-The design features a clean RGB theme with subtle animations for a modern touch.
+🌐 **[Live Site](https://www.albert-kurto.com)**
 
-More features and content will be added in the future.
+## Projects
 
-## 🔧 What's inside
+- **AKRO HR** - Internal platform for time tracking, project management, and holiday requests
+- **Driving Mastery** - UK driving theory test learning platform with AI-powered content
+- **Rogue Shooter** - Browser-based game with dynamic difficulty and upgrades
+- **Speed Typing** - Typing practice platform with performance tracking
 
-- Tech stack & skills overview  
-- A few of my projects  
-- RGB aesthetic with custom animations  
-- Mobile-friendly & fully responsive
+## Tech
 
-Feel free to explore and connect via the links provided in the navbar or footer.
+Built with HTML, Tailwind CSS, and JavaScript. Hosted on GitHub Pages.
 
----
+## Connect
 
-Thanks for checking it out!
-
-🌐 [Visit the site](https://albro21.github.io/portfolio/)
+- **GitHub**: [@Albro21](https://github.com/Albro21)
+- **LinkedIn**: [Alberts Kurto](https://www.linkedin.com/in/alberts-kurto-3370a134a/)
+- **Instagram**: [@_albro21_](https://www.instagram.com/_albro21_/)
+- **Telegram**: [@albro21](https://t.me/albro21)

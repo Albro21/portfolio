@@ -14,7 +14,7 @@
   <title>Albert Kurto – Portfolio</title>
 
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/c1b39fa0dc.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c1b39fa0dc.js" crossorigin="anonymous" defer></script>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/output.css">
@@ -65,6 +65,8 @@
   <!-- Custom Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
+  <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
 </head>
 
@@ -115,7 +117,7 @@
   <div class="flex flex-col">
 
     <!-- Introduction -->
-    <section id="introduction" class="min-h-screen flex items-center justify-center px-4">
+    <section id="introduction" class="min-h-screen flex items-center justify-center px-4 pt-20">
       <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 
         <!-- Introduction Text -->
@@ -145,7 +147,10 @@
         <!-- Portrait -->
         <div class="lg:col-span-5 text-center mb-6 md:mb-0 fade-in">
           <div class="gradient-outline fade-in rounded-full inline-block p-2">
-            <img src="assets/images/portrait.jpeg" alt="Albert Kurto" class="w-full rounded-full" fetchpriority="high" id="portrait" />
+            <picture>
+              <source srcset="assets/images/portrait.avif" type="image/avif">
+              <img src="assets/images/portrait.jpeg" alt="Albert Kurto" class="w-full rounded-full" fetchpriority="high" id="portrait" width="800" height="800" />
+            </picture>
           </div>
         </div>
       </div>
@@ -158,7 +163,7 @@
       </h2>
 
       <p class="text-2xl max-md:text-sm leading-relaxed max-w-5xl mx-auto font-['Merienda'] fade-in" style="text-align: justify;">
-        My name is Alberts Kurto. I'm 17 years old and originally from Latvia <img src="assets/images/latvian_flag.svg" alt="Latvian flag" class="inline-block h-[1em] align-baseline"> . Currently, I live in the UK. My passion is backend development,
+        My name is Alberts Kurto. I'm 17 years old and originally from Latvia <img src="assets/images/latvian_flag.svg" alt="Latvian flag" class="inline-block h-[1em] align-baseline" width="24" height="16"> . Currently, I live in the UK. My passion is backend development,
         where I enjoy building efficient and reliable server-side applications.
       </p>
 
@@ -182,61 +187,61 @@
       <div class="w-full flex flex-col gap-3">
         <h3 class="gradient-text font-['Merienda'] fade-in text-left text-2xl mb-3 mt-6">WEB</h3>
         <div class="grid grid-cols-3 lg:flex lg:flex-wrap gap-2">
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/django.svg" alt="Django Logo" height="45" width="45">
               <h6 class="text-sm mt-1 mb-0 text-slate-100">Django</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/html.svg" alt="HTML Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">HTML</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/css.svg" alt="CSS Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">CSS</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/js.svg" alt="JavaScript Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">JavaScript</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/bootstrap.svg" alt="Bootstrap Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">Bootstrap</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/tailwind.svg" alt="Tailwind CSS Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200 mt-1">Tailwind</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/mysql.svg" alt="MySQL Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">MySQL</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/sqlite.svg" alt="SQLite Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">SQLite</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/restapi.svg" alt="REST API Logo" height="45" width="45">
               <h6 class="text-sm whitespace-nowrap text-slate-200">REST API</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/chartjs.svg" alt="Chart.js Logo" height="45" width="45">
               <h6 class="text-sm whitespace-nowrap text-slate-200">Chart.js</h6>
@@ -249,13 +254,13 @@
       <div class="w-full flex flex-col gap-3">
         <h3 class="gradient-text font-['Merienda'] fade-in text-left text-2xl mb-3 mt-6">AI</h3>
         <div class="grid grid-cols-3 lg:flex lg:flex-wrap gap-2">
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/vertexai.svg" alt="Vertex AI Logo" height="45" width="45">
               <h6 class="text-sm whitespace-nowrap text-slate-200">Vertex AI</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/gemini.svg" alt="Gemini Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">Gemini</h6>
@@ -268,19 +273,19 @@
       <div class="w-full flex flex-col gap-3">
         <h3 class="gradient-text font-['Merienda'] fade-in text-left mt-6 mb-3 text-2xl">Python Libraries</h3>
         <div class="grid grid-cols-3 lg:flex lg:flex-wrap gap-2">
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
                 <img src="assets/images/skills/requests.svg" alt="Requests Logo" height="45" width="45">
                 <h6 class="text-sm text-slate-200">Requests</h6>
               </div>
             </div>
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
-                <img src="assets/images/skills/scrapy.png" alt="Scrapy Logo" height="45" width="45">
+                <picture><source srcset="assets/images/skills/scrapy.avif" type="image/avif"><img src="assets/images/skills/scrapy.png" alt="Scrapy Logo" height="45" width="45"></picture>
                 <h6 class="text-sm text-slate-200">Scrapy</h6>
               </div>
             </div>
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
                 <img src="assets/images/skills/selenium.svg" alt="Selenium Logo" height="45" width="45">
                 <h6 class="text-sm text-slate-200">Selenium</h6>
@@ -293,25 +298,25 @@
       <div class="w-full flex flex-col gap-3">
         <h3 class="gradient-text font-['Merienda'] fade-in text-left mt-6 mb-3 text-2xl">Languages</h3>
         <div class="grid grid-cols-3 lg:flex lg:flex-wrap gap-2">
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
                 <img src="assets/images/skills/python.svg" alt="Python Logo" height="45" width="45">
                 <h6 class="text-sm text-slate-200">Python</h6>
               </div>
             </div>
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
                 <img src="assets/images/skills/js.svg" alt="JavaScript Logo" height="45" width="45">
                 <h6 class="text-sm text-slate-200">JavaScript</h6>
               </div>
             </div>
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
                 <img src="assets/images/skills/cpp.svg" alt="C++ Logo" height="45" width="45">
                 <h6 class="text-sm text-slate-200">C++</h6>
               </div>
             </div>
-            <div class="gradient-outline fade-in rounded p-1">
+            <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
               <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
                 <img src="assets/images/skills/lua.svg" alt="Lua Logo" height="45" width="45">
                 <h6 class="text-sm text-slate-200">Lua</h6>
@@ -324,43 +329,43 @@
       <div class="w-full flex flex-col gap-3">
         <h3 class="gradient-text font-['Merienda'] fade-in text-left text-2xl mb-3 mt-6">Other</h3>
         <div class="grid grid-cols-3 lg:flex lg:flex-wrap gap-2">
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/git.svg" alt="Git Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">Git</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/github.svg" alt="GitHub Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">GitHub</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/vscode.svg" alt="VS Code Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">VS Code</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/stripe.svg" alt="Stripe Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">Stripe</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/brevo.svg" alt="Brevo Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">Brevo</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/digitalocean.svg" alt="DigitalOcean Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">DigitalOcean</h6>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-full aspect-square lg:w-[100px] lg:h-[100px] justify-center items-center rounded">
               <img src="assets/images/skills/pythonanywhere.svg" alt="PythonAnywhere Logo" height="45" width="45">
               <h6 class="text-sm text-slate-200">PythonAny...</h6>
@@ -381,7 +386,7 @@
           <div class="gradient-outline fade-in rounded-2xl h-full p-1 hover:scale-[1.02] transition-transform duration-300">
             <div class="bg-black rounded-2xl h-full flex flex-col overflow-hidden">
               <div class="relative overflow-hidden">
-                <img id="drivingMasteryGallery" src="assets/images/drivingmastery/learners1.png" class="w-full aspect-video object-cover block transition-all duration-500 ease-in-out" alt="Driving Mastery Screenshot" style="transform: translateX(0);">
+                <picture><source srcset="assets/images/drivingmastery/learners1.avif 2235w" type="image/avif" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 410px"><img id="drivingMasteryGallery" src="assets/images/drivingmastery/learners1.png" srcset="assets/images/drivingmastery/learners1.png 2235w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 410px" class="w-full aspect-video object-cover block transition-all duration-500 ease-in-out" alt="Driving Mastery Screenshot" width="410" height="209" style="transform: translateX(0);"></picture>
                 <button class="absolute top-1/2 left-2 -translate-y-1/2 p-2 text-white hover:scale-110 transition-transform z-10" onclick="prevDrivingMasteryImage()" aria-label="Previous Image">
                   <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
                 </button>
@@ -408,7 +413,7 @@
           <div class="gradient-outline fade-in rounded-2xl h-full p-1 hover:scale-[1.02] transition-transform duration-300">
             <div class="bg-black rounded-2xl h-full flex flex-col overflow-hidden">
               <div class="relative overflow-hidden">
-                <img id="gallery1" src="assets/images/akrohr/screenshot1.png" class="w-full aspect-video object-cover block transition-all duration-500 ease-in-out" alt="AKRO HR Screenshot" style="transform: translateX(0);">
+                <picture><source srcset="assets/images/akrohr/screenshot1.avif 2235w" type="image/avif" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 410px"><img id="gallery1" src="assets/images/akrohr/screenshot1.png" srcset="assets/images/akrohr/screenshot1.png 2235w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 410px" class="w-full aspect-video object-cover block transition-all duration-500 ease-in-out" alt="AKRO HR Screenshot" width="410" height="209" style="transform: translateX(0);"></picture>
                 <button class="absolute top-1/2 left-2 -translate-y-1/2 p-2 text-slate-50 hover:scale-110 transition-transform z-10" onclick="prevImage(1)" aria-label="Previous Image">
                   <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
                 </button>
@@ -434,7 +439,11 @@
         <div>
           <div class="gradient-outline fade-in rounded-2xl h-full p-1 hover:scale-[1.02] transition-transform duration-300">
             <div class="bg-black rounded-2xl h-full flex flex-col overflow-hidden">
-              <img src="assets/images/game/game.gif" class="w-full aspect-video object-cover fade-in" alt="Roguelike Game Gif">
+              <video class="w-full aspect-video object-cover fade-in" autoplay loop muted playsinline poster="assets/images/game/game-poster.jpg" width="440" height="209">
+                <source src="assets/images/game/game.webm" type="video/webm">
+                <source src="assets/images/game/game.mp4" type="video/mp4">
+                <img src="assets/images/game/game.gif" alt="Roguelike Game Gif" class="w-full aspect-video object-cover fade-in">
+              </video>
               <div class="p-6 flex flex-col flex-1">
                 <h5 class="gradient-text font-['Merienda'] fade-in mb-4 text-2xl">Rogue Shooter</h5>
                 <p class="fade-in text-slate-300 mb-auto text-lg leading-relaxed">
@@ -453,7 +462,7 @@
           <div class="gradient-outline fade-in rounded-2xl h-full p-1 hover:scale-[1.02] transition-transform duration-300">
             <div class="bg-black rounded-2xl h-full flex flex-col overflow-hidden">
               <div class="relative overflow-hidden">
-                <img id="gallery2" src="assets/images/typing/screenshot1.avif" class="w-full aspect-video object-cover block transition-all duration-500 ease-in-out" alt="Speed Typing Website Screenshot" style="transform: translateX(0);">
+                <img id="gallery2" src="assets/images/typing/screenshot1.avif" srcset="assets/images/typing/screenshot1.avif 1452w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 45vw, 410px" class="w-full aspect-video object-cover block transition-all duration-500 ease-in-out" alt="Speed Typing Website Screenshot" width="410" height="209" style="transform: translateX(0);">
                 <button class="absolute top-1/2 left-2 -translate-y-1/2 p-2 text-slate-50 hover:scale-110 transition-transform z-10" onclick="prevImage(2)" aria-label="Previous Image">
                   <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
                 </button>

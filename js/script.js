@@ -1,19 +1,19 @@
 const galleries = {
     1: [
-        "assets/images/akrohr/screenshot1.png",
-        "assets/images/akrohr/screenshot2.png",
-        "assets/images/akrohr/screenshot3.png",
-        "assets/images/akrohr/screenshot4.png",
-        "assets/images/akrohr/screenshot5.png",
-        "assets/images/akrohr/screenshot6.png",
-        "assets/images/akrohr/screenshot7.png"
+        "assets/images/akrohr/screenshot1",
+        "assets/images/akrohr/screenshot2",
+        "assets/images/akrohr/screenshot3",
+        "assets/images/akrohr/screenshot4",
+        "assets/images/akrohr/screenshot5",
+        "assets/images/akrohr/screenshot6",
+        "assets/images/akrohr/screenshot7"
     ],
     2: [
-        "assets/images/typing/screenshot1.avif",
-        "assets/images/typing/screenshot2.avif",
-        "assets/images/typing/screenshot3.avif",
-        "assets/images/typing/screenshot4.avif",
-        "assets/images/typing/screenshot5.avif"
+        "assets/images/typing/screenshot1",
+        "assets/images/typing/screenshot2",
+        "assets/images/typing/screenshot3",
+        "assets/images/typing/screenshot4",
+        "assets/images/typing/screenshot5"
     ]
 };
 
@@ -30,12 +30,12 @@ const animating = {
 
 // Driving Mastery gallery
 const drivingMasteryImages = [
-    "assets/images/drivingmastery/learners1.png",
-    "assets/images/drivingmastery/learners2.png",
-    "assets/images/drivingmastery/learners3.png",
-    "assets/images/drivingmastery/instructors1.png",
-    "assets/images/drivingmastery/instructors2.png",
-    "assets/images/drivingmastery/instructors3.png"
+    "assets/images/drivingmastery/learners1",
+    "assets/images/drivingmastery/learners2",
+    "assets/images/drivingmastery/learners3",
+    "assets/images/drivingmastery/learners4",
+    "assets/images/drivingmastery/learners5",
+    "assets/images/drivingmastery/instructors1"
 ];
 let drivingMasteryIndex = 0;
 
@@ -43,15 +43,22 @@ function updateGallery(id, direction) {
     if (animating[id]) return;
     animating[id] = true;
     
+    const picture = document.getElementById(`gallery${id}`).parentElement;
     const img = document.getElementById(`gallery${id}`);
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out
     img.style.transform = direction === 1 ? 'translateX(-30%)' : 'translateX(30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
-        img.src = galleries[id][indices[id]];
+        // Change image with both formats
+        const basePath = galleries[id][indices[id]];
+        if (source) {
+            source.srcset = `${basePath}.avif 2235w`;
+        }
+        img.src = `${basePath}.png`;
+        img.srcset = `${basePath}.png 2235w`;
         
         // Position for slide in
         img.style.transition = 'none';
@@ -78,15 +85,22 @@ function prevDrivingMasteryImage() {
     
     drivingMasteryIndex = (drivingMasteryIndex - 1 + drivingMasteryImages.length) % drivingMasteryImages.length;
     
+    const picture = document.getElementById('drivingMasteryGallery').parentElement;
     const img = document.getElementById('drivingMasteryGallery');
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out right
     img.style.transform = 'translateX(30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
-        img.src = drivingMasteryImages[drivingMasteryIndex];
+        // Change image with both formats
+        const basePath = drivingMasteryImages[drivingMasteryIndex];
+        if (source) {
+            source.srcset = `${basePath}.avif 2235w`;
+        }
+        img.src = `${basePath}.png`;
+        img.srcset = `${basePath}.png 2235w`;
         
         // Position for slide in from left
         img.style.transition = 'none';
@@ -113,15 +127,22 @@ function nextDrivingMasteryImage() {
     
     drivingMasteryIndex = (drivingMasteryIndex + 1) % drivingMasteryImages.length;
     
+    const picture = document.getElementById('drivingMasteryGallery').parentElement;
     const img = document.getElementById('drivingMasteryGallery');
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out left
     img.style.transform = 'translateX(-30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
-        img.src = drivingMasteryImages[drivingMasteryIndex];
+        // Change image with both formats
+        const basePath = drivingMasteryImages[drivingMasteryIndex];
+        if (source) {
+            source.srcset = `${basePath}.avif 2235w`;
+        }
+        img.src = `${basePath}.png`;
+        img.srcset = `${basePath}.png 2235w`;
         
         // Position for slide in from right
         img.style.transition = 'none';
@@ -173,14 +194,19 @@ function nextLearnerImage() {
 
 function updateLearnerGallery(direction) {
     isLearnerAnimating = true;
+    const picture = document.getElementById('learnerGallery').parentElement;
     const img = document.getElementById('learnerGallery');
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out
     img.style.transform = direction === 1 ? 'translateX(-30%)' : 'translateX(30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
+        // Change image with both formats
+        if (source) {
+            source.srcset = `assets/images/drivingmastery/learners${learnerIndex}.avif`;
+        }
         img.src = `assets/images/drivingmastery/learners${learnerIndex}.png`;
         
         // Position for slide in
@@ -221,14 +247,19 @@ function nextInstructorImage() {
 
 function updateInstructorGallery(direction) {
     isInstructorAnimating = true;
+    const picture = document.getElementById('instructorGallery').parentElement;
     const img = document.getElementById('instructorGallery');
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out
     img.style.transform = direction === 1 ? 'translateX(-30%)' : 'translateX(30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
+        // Change image with both formats
+        if (source) {
+            source.srcset = `assets/images/drivingmastery/instructors${instructorIndex}.avif`;
+        }
         img.src = `assets/images/drivingmastery/instructors${instructorIndex}.png`;
         
         // Position for slide in
@@ -343,16 +374,21 @@ function prevAkroHRImage() {
     if (isAkroHRAnimating) return;
     isAkroHRAnimating = true;
     
-    akroHRIndex = (akroHRIndex - 1 + 6) % 6;
+    akroHRIndex = (akroHRIndex - 1 + 7) % 7;
     
+    const picture = document.getElementById('akrohrGallery').parentElement;
     const img = document.getElementById('akrohrGallery');
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out right
     img.style.transform = 'translateX(30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
+        // Change image with both formats
+        if (source) {
+            source.srcset = `assets/images/akrohr/screenshot${akroHRIndex + 1}.avif`;
+        }
         img.src = `assets/images/akrohr/screenshot${akroHRIndex + 1}.png`;
         
         // Position for slide in from left
@@ -371,23 +407,28 @@ function prevAkroHRImage() {
         }, 50);
     }, 500);
     
-    document.getElementById('akrohr-counter').textContent = `${akroHRIndex + 1} / 6`;
+    document.getElementById('akrohr-counter').textContent = `${akroHRIndex + 1} / 7`;
 }
 
 function nextAkroHRImage() {
     if (isAkroHRAnimating) return;
     isAkroHRAnimating = true;
     
-    akroHRIndex = (akroHRIndex + 1) % 6;
+    akroHRIndex = (akroHRIndex + 1) % 7;
     
+    const picture = document.getElementById('akrohrGallery').parentElement;
     const img = document.getElementById('akrohrGallery');
+    const source = picture.querySelector('source[type="image/avif"]');
     
     // Slide out left
     img.style.transform = 'translateX(-30%)';
     img.style.opacity = '0';
     
     setTimeout(() => {
-        // Change image
+        // Change image with both formats
+        if (source) {
+            source.srcset = `assets/images/akrohr/screenshot${akroHRIndex + 1}.avif`;
+        }
         img.src = `assets/images/akrohr/screenshot${akroHRIndex + 1}.png`;
         
         // Position for slide in from right
@@ -406,7 +447,7 @@ function nextAkroHRImage() {
         }, 50);
     }, 500);
     
-    document.getElementById('akrohr-counter').textContent = `${akroHRIndex + 1} / 6`;
+    document.getElementById('akrohr-counter').textContent = `${akroHRIndex + 1} / 7`;
 }
 
 

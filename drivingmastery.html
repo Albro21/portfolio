@@ -80,7 +80,7 @@
   <nav class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md" id="navbar-scroll">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
-        <a class="font-['Merienda'] font-medium text-xl gradient-text fade-in" href="index.html">← Back to Portfolio</a>
+        <a class="font-['Merienda'] font-medium text-xl gradient-text fade-in" href="/">← Back to Portfolio</a>
       </div>
     </div>
   </nav>
@@ -126,7 +126,7 @@
       <section class="mb-12 fade-in">
         <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 leading-relaxed">Learner Platform</h2>
         <div class="relative overflow-hidden rounded-lg">
-          <img id="learnerGallery" src="assets/images/drivingmastery/learners1.png" class="w-full rounded-lg block transition-all duration-500 ease-in-out" alt="Learner Platform Screenshot" style="transform: translateX(0);">
+          <picture><source srcset="assets/images/drivingmastery/learners1.avif" type="image/avif"><img id="learnerGallery" src="assets/images/drivingmastery/learners1.png" class="w-full rounded-lg block transition-all duration-500 ease-in-out" alt="Learner Platform Screenshot" style="transform: translateX(0);"></picture>
           <button class="absolute top-1/2 left-4 -translate-y-1/2 p-3 text-white hover:scale-110 transition-transform z-10" onclick="prevLearnerImage()" aria-label="Previous Image">
             <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
           </button>
@@ -141,7 +141,7 @@
       <section class="mb-12 fade-in">
         <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 leading-relaxed">Instructor Platform</h2>
         <div class="relative overflow-hidden rounded-lg">
-          <img id="instructorGallery" src="assets/images/drivingmastery/instructors1.png" class="w-full rounded-lg block transition-all duration-500 ease-in-out" alt="Instructor Platform Screenshot" style="transform: translateX(0);">
+          <picture><source srcset="assets/images/drivingmastery/instructors1.avif" type="image/avif"><img id="instructorGallery" src="assets/images/drivingmastery/instructors1.png" class="w-full rounded-lg block transition-all duration-500 ease-in-out" alt="Instructor Platform Screenshot" style="transform: translateX(0);"></picture>
           <button class="absolute top-1/2 left-4 -translate-y-1/2 p-3 text-white hover:scale-110 transition-transform z-10" onclick="prevInstructorImage()" aria-label="Previous Image">
             <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
           </button>
@@ -158,73 +158,73 @@
         
         <!-- Tech Stack Icons -->
         <div class="flex flex-wrap justify-center gap-3 mb-8">
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/django.svg" alt="Django" height="35" width="35">
               <span class="text-xs text-slate-200">Django</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/python.svg" alt="Python" height="35" width="35">
               <span class="text-xs text-slate-200">Python</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/tailwind.svg" alt="Tailwind" height="35" width="35">
               <span class="text-xs text-slate-200">Tailwind</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/js.svg" alt="JavaScript" height="35" width="35">
               <span class="text-xs text-slate-200">JavaScript</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/vertexai.svg" alt="Vertex AI" height="35" width="35">
               <span class="text-xs text-slate-200">Vertex AI</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/gemini.svg" alt="Gemini" height="35" width="35">
               <span class="text-xs text-slate-200">Gemini</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/stripe.svg" alt="Stripe" height="35" width="35">
               <span class="text-xs text-slate-200">Stripe</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/digitalocean.svg" alt="DigitalOcean" height="35" width="35">
               <span class="text-xs text-slate-200">DigitalOcean</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/html.svg" alt="HTML" height="35" width="35">
               <span class="text-xs text-slate-200">HTML</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/css.svg" alt="CSS" height="35" width="35">
               <span class="text-xs text-slate-200">CSS</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/sqlite.svg" alt="SQLite" height="35" width="35">
               <span class="text-xs text-slate-200">SQLite</span>
             </div>
           </div>
-          <div class="gradient-outline fade-in rounded p-1">
+          <div class="gradient-outline fade-in rounded p-1 hover:-translate-y-1 transition-transform">
             <div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded">
               <img src="assets/images/skills/brevo.svg" alt="Brevo" height="35" width="35">
               <span class="text-xs text-slate-200">Brevo</span>
@@ -421,7 +421,7 @@
   <footer class="py-8 border-t border-gray-800/50">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center">
-        <a href="index.html" class="gradient-text font-['Merienda'] hover:opacity-80 transition-opacity">← Back to Portfolio</a>
+        <a href="/" class="gradient-text font-['Merienda'] hover:opacity-80 transition-opacity">← Back to Portfolio</a>
         <p class="text-xs text-slate-600 mt-4">&copy; 2025 Albert Kurto</p>
       </div>
     </div>
