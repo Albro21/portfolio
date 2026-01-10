@@ -1,3 +1,10 @@
+// Update copyright year automatically
+document.addEventListener('DOMContentLoaded', () => {
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.getElementById('copyright');
+    copyrightElement.textContent = `© ${currentYear} Albert Kurto`;
+});
+
 const galleries = {
     1: [
         "assets/images/akrohr/screenshot1",
