@@ -14,18 +14,32 @@ const galleries = {
         "assets/images/typing/screenshot3",
         "assets/images/typing/screenshot4",
         "assets/images/typing/screenshot5"
+    ],
+    3: [
+        "assets/images/arthur-portfolio/screenshot1",
+        "assets/images/arthur-portfolio/screenshot2",
+        "assets/images/arthur-portfolio/screenshot3"
+    ],
+    arthurPortfolio: [
+        "assets/images/arthur-portfolio/screenshot1",
+        "assets/images/arthur-portfolio/screenshot2",
+        "assets/images/arthur-portfolio/screenshot3"
     ]
 };
 
 const indices = {
     1: 0,
-    2: 0
+    2: 0,
+    3: 0,
+    arthurPortfolio: 0
 };
 
 const animating = {
     1: false,
     2: false,
-    drivingMastery: false
+    3: false,
+    drivingMastery: false,
+    arthurPortfolio: false
 };
 
 // Driving Mastery gallery
@@ -530,4 +544,92 @@ function nextSpeedTypingImage() {
     }, 500);
     
     document.getElementById('speedTypingCounter').textContent = `${speedTypingIndex + 1} / ${speedTypingImages.length}`;
+}
+
+// Arthur Portfolio Gallery
+let arthurPortfolioIndex = 0;
+let isArthurPortfolioAnimating = false;
+
+function prevArthurPortfolioImage() {
+    if (isArthurPortfolioAnimating) return;
+    isArthurPortfolioAnimating = true;
+    
+    arthurPortfolioIndex = (arthurPortfolioIndex - 1 + galleries.arthurPortfolio.length) % galleries.arthurPortfolio.length;
+    
+    const img = document.getElementById('arthurGallery');
+    
+    // Slide out right
+    img.style.transform = 'translateX(30%)';
+    img.style.opacity = '0';
+    
+    setTimeout(() => {
+        // Change image with AVIF support
+        const basePath = galleries.arthurPortfolio[arthurPortfolioIndex];
+        const picture = img.parentElement;
+        const source = picture.querySelector('source');
+        
+        if (source) {
+            source.srcset = `${basePath}.avif`;
+        }
+        img.src = `${basePath}.png`;
+        
+        // Position for slide in from left
+        img.style.transition = 'none';
+        img.style.transform = 'translateX(-30%)';
+        
+        setTimeout(() => {
+            // Slide in
+            img.style.transition = 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out';
+            img.style.transform = 'translateX(0)';
+            img.style.opacity = '1';
+            
+            setTimeout(() => {
+                isArthurPortfolioAnimating = false;
+            }, 500);
+        }, 50);
+    }, 500);
+    
+    document.getElementById('arthur-portfolio-counter').textContent = `${arthurPortfolioIndex + 1} / ${galleries.arthurPortfolio.length}`;
+}
+
+function nextArthurPortfolioImage() {
+    if (isArthurPortfolioAnimating) return;
+    isArthurPortfolioAnimating = true;
+    
+    arthurPortfolioIndex = (arthurPortfolioIndex + 1) % galleries.arthurPortfolio.length;
+    
+    const img = document.getElementById('arthurGallery');
+    
+    // Slide out left
+    img.style.transform = 'translateX(-30%)';
+    img.style.opacity = '0';
+    
+    setTimeout(() => {
+        // Change image with AVIF support
+        const basePath = galleries.arthurPortfolio[arthurPortfolioIndex];
+        const picture = img.parentElement;
+        const source = picture.querySelector('source');
+        
+        if (source) {
+            source.srcset = `${basePath}.avif`;
+        }
+        img.src = `${basePath}.png`;
+        
+        // Position for slide in from right
+        img.style.transition = 'none';
+        img.style.transform = 'translateX(30%)';
+        
+        setTimeout(() => {
+            // Slide in
+            img.style.transition = 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out';
+            img.style.transform = 'translateX(0)';
+            img.style.opacity = '1';
+            
+            setTimeout(() => {
+                isArthurPortfolioAnimating = false;
+            }, 500);
+        }, 50);
+    }, 500);
+    
+    document.getElementById('arthur-portfolio-counter').textContent = `${arthurPortfolioIndex + 1} / ${galleries.arthurPortfolio.length}`;
 }
