@@ -471,6 +471,45 @@ function nextAkroHRImage() {
     document.getElementById('akrohr-counter').textContent = `${akroHRIndex + 1} / 7`;
 }
 
+// AKRO Solutions detail page gallery
+let akroSolutionsIndex = 0;
+let isAkroSolutionsAnimating = false;
+
+function updateAkroSolutionsGallery(direction) {
+    if (isAkroSolutionsAnimating) return;
+    isAkroSolutionsAnimating = true;
+    akroSolutionsIndex = (akroSolutionsIndex + direction + 5) % 5;
+
+    const img = document.getElementById('akroSolutionsGallery');
+    img.style.transform = direction === 1 ? 'translateX(-30%)' : 'translateX(30%)';
+    img.style.opacity = '0';
+
+    setTimeout(() => {
+        img.src = `assets/images/akrosolutions/screenshot${akroSolutionsIndex + 1}.png`;
+        img.style.transition = 'none';
+        img.style.transform = direction === 1 ? 'translateX(30%)' : 'translateX(-30%)';
+
+        setTimeout(() => {
+            img.style.transition = 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out';
+            img.style.transform = 'translateX(0)';
+            img.style.opacity = '1';
+            setTimeout(() => {
+                isAkroSolutionsAnimating = false;
+            }, 500);
+        }, 50);
+    }, 500);
+
+    document.getElementById('akroSolutions-counter').textContent = `${akroSolutionsIndex + 1} / 5`;
+}
+
+function prevAkroSolutionsImage() {
+    updateAkroSolutionsGallery(-1);
+}
+
+function nextAkroSolutionsImage() {
+    updateAkroSolutionsGallery(1);
+}
+
 
 // SpeedTyping gallery for detail page
 const speedTypingImages = [

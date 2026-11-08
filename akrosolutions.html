@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKRO Solutions - Albert Kurto</title>
+
+  <script src="https://kit.fontawesome.com/c1b39fa0dc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/output.css">
+  <script src="js/script.js" defer></script>
+
+  <meta name="description" content="AKRO Solutions - BIM engineering marketing website by Albert Kurto, built with Eleventy, Nunjucks and Tailwind CSS.">
+  <meta name="keywords" content="AKRO Solutions, BIM engineering, Eleventy, Nunjucks, Tailwind CSS, static site generation">
+  <meta property="og:title" content="AKRO Solutions - BIM Engineering Website">
+  <meta property="og:description" content="A content-driven static website for a BIM engineering studio, with project galleries, service collections and SEO-ready page generation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.albert-kurto.com/akrosolutions.html">
+  <meta property="og:image" content="https://www.albert-kurto.com/assets/images/akrosolutions/screenshot1.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black text-slate-100">
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a class="font-['Merienda'] font-medium text-xl gradient-text fade-in" href="/">&larr; Back to Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-20">
+    <article class="max-w-5xl mx-auto px-4">
+      <header class="mb-12">
+        <h1 class="gradient-text font-['Merienda'] font-bold text-6xl max-md:text-4xl mb-4 fade-in leading-relaxed">AKRO Solutions</h1>
+        <p class="text-2xl text-slate-300 mb-6 fade-in leading-relaxed">BIM Engineering Marketing Website</p>
+        <a href="https://akrosolutions.com/" target="_blank" rel="noopener noreferrer" class="inline-block gradient-outline rounded-lg p-1">
+          <span class="block px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-900 transition-colors font-medium">Visit live website</span>
+        </a>
+      </header>
+
+      <section class="mb-12 fade-in">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 leading-relaxed">Website Screenshots</h2>
+        <div class="relative overflow-hidden rounded-lg">
+          <img id="akroSolutionsGallery" src="assets/images/akrosolutions/screenshot1.png" class="w-full rounded-lg block transition-all duration-500 ease-in-out" alt="AKRO Solutions homepage" width="1203" height="669" style="transform: translateX(0);">
+          <button class="absolute top-1/2 left-4 -translate-y-1/2 p-3 text-white hover:scale-110 transition-transform z-10" onclick="prevAkroSolutionsImage()" aria-label="Previous Image">
+            <i class="fa-solid fa-chevron-left gradient-text text-2xl"></i>
+          </button>
+          <button class="absolute top-1/2 right-4 -translate-y-1/2 p-3 text-white hover:scale-110 transition-transform z-10" onclick="nextAkroSolutionsImage()" aria-label="Next Image">
+            <i class="fa-solid fa-chevron-right gradient-text text-2xl"></i>
+          </button>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/80 px-4 py-2 rounded-full text-sm" id="akroSolutions-counter">1 / 5</div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Project Overview</h2>
+        <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+          <p class="fade-in">AKRO Solutions is a production marketing website for a BIM engineering and modelling studio operating across the UK and Europe. The site presents the company's project portfolio, service catalogue and pre-built BIM system packages to prospective construction clients.</p>
+          <p class="fade-in">The site is built as a small content system: each project, service and BIM package is authored once with structured front matter, while Eleventy collections generate the listings, navigation, detail pages and sitemap automatically.</p>
+          <p class="fade-in">The result is a fast static site with 22 pages, automatic image galleries, consistent SEO metadata and a visual identity built on a custom Tailwind theme.</p>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold gradient-text font-['Merienda'] mb-6 fade-in leading-relaxed">Technical Stack</h2>
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <div class="gradient-outline fade-in rounded p-1"><div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded"><img src="assets/images/skills/11ty.png" alt="Eleventy" height="35" width="35"><span class="text-xs text-slate-200">Eleventy</span></div></div>
+          <div class="gradient-outline fade-in rounded p-1"><div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded"><img src="assets/images/skills/nunjucks.svg" alt="Nunjucks" height="35" width="35"><span class="text-xs text-slate-200">Nunjucks</span></div></div>
+          <div class="gradient-outline fade-in rounded p-1"><div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded"><img src="assets/images/skills/tailwind.svg" alt="Tailwind CSS" height="35" width="35"><span class="text-xs text-slate-200">Tailwind CSS</span></div></div>
+          <div class="gradient-outline fade-in rounded p-1"><div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded"><img src="assets/images/skills/js.svg" alt="JavaScript" height="35" width="35"><span class="text-xs text-slate-200">JavaScript</span></div></div>
+          <div class="gradient-outline fade-in rounded p-1"><div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded"><img src="assets/images/skills/git.svg" alt="Git" height="35" width="35"><span class="text-xs text-slate-200">Git</span></div></div>
+          <div class="gradient-outline fade-in rounded p-1"><div class="bg-black flex flex-col gap-2 p-3 w-20 h-20 justify-center items-center rounded"><img src="assets/images/skills/hetzner.svg" alt="Hetzner VPS" height="35" width="35"><span class="text-xs text-slate-200">Hetzner</span></div></div>
+        </div>
+        <div class="space-y-6 text-slate-300">
+          <div class="fade-in"><h3 class="text-xl font-semibold text-slate-200 mb-3">Static Site Generation</h3><ul class="list-disc list-inside space-y-2 ml-4"><li><strong class="text-slate-200">Eleventy</strong> pre-renders every page to plain HTML at build time.</li><li><strong class="text-slate-200">Nunjucks</strong> provides layouts, reusable components and collections.</li><li><strong class="text-slate-200">Tailwind CSS 4</strong> defines the custom palette, responsive layouts and animations.</li></ul></div>
+          <div class="fade-in"><h3 class="text-xl font-semibold text-slate-200 mb-3">Content Architecture</h3><ul class="list-disc list-inside space-y-2 ml-4"><li>YAML front matter stores structured data for projects, services and packages.</li><li>Eleventy collections drive listing pages, navigation and sitemap output.</li><li>Build-time data files discover image galleries automatically and keep them synchronized.</li></ul></div>
+          <div class="fade-in"><h3 class="text-xl font-semibold text-slate-200 mb-3">Integrations & SEO</h3><ul class="list-disc list-inside space-y-2 ml-4"><li>Formspree handles contact submissions without a custom backend.</li><li>Google Tag Manager supports analytics and conversion tracking.</li><li>Per-page metadata and a generated sitemap improve discoverability.</li></ul></div>
+          <div class="fade-in"><h3 class="text-xl font-semibold text-slate-200 mb-3">Deployment</h3><ul class="list-disc list-inside space-y-2 ml-4"><li><strong class="text-slate-200">Hetzner VPS</strong> — AKRO Solutions is hosted on Hetzner alongside the AKRO HR internal company management web application.</li></ul></div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="py-8 border-t border-gray-800/50">
+    <p id="copyright" class="text-center text-slate-400 text-sm"></p>
+  </footer>
+</body>
+</html>
